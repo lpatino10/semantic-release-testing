@@ -5,9 +5,5 @@ install:
 
 script: echo "yo"
 
-deploy:
-  - provider: script
-    script: ./semantic-release.sh
-    skip_cleanup: true
-    on:
-      repo: lpatino10/semantic-release-testing
+after_success:
+  - semantic-release
