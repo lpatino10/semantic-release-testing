@@ -1,9 +1,6 @@
 language: java
 
-install:
-  - npm install semantic-release@15.6.0
-
 script: echo "yo"
 
 after_success:
-  - semantic-release
+  - npx semantic-release
