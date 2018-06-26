@@ -1,6 +1,6 @@
 language: java
 
-script: echo "yo"
+script: echo "yoooo"
 
 after_success:
   - npx semantic-release
