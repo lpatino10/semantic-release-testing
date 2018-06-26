@@ -1,0 +1,10 @@
+install:
+  - npm install semantic-release@15.6.0
+
+deploy:
+  - provider: script
+    script: ./semantic-release.sh
+    skip_cleanup: true
+    on:
+      repo: lpatino10/semantic-release-testing
+      tags: true

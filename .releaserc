@@ -1,8 +1,6 @@
 {
   "branch": "master",
   "verifyConditions": [],
-  "dryRun": true,
-  "noCi": true,
   "debug": true,
   "prepare": [],
   "publish": ["@semantic-release/github"]
