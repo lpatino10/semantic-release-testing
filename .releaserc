@@ -2,14 +2,5 @@
   "branch": "master",
   "verifyConditions": [],
   "prepare": [],
-  "publish": [
-    "@semantic-release/github",
-    {
-      "path": "@semantic-release/exec",
-      "cmd": "./version-bump.sh ${lastRelease.version} ${nextRelease.version}",
-      "assets": [
-        {"path": "java-sdk/build/libs/java-sdk-*-jar-with-dependencies.txt", "label": "Release JAR"}
-      ]
-    }
-  ]
+  "publish": ["@semantic-release/github"]
 }
