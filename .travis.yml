@@ -1,11 +1,6 @@
 language: java
-sudo: required
 
 script: echo "yoooo"
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - nvm install lts/*
-    - npx travis-deploy-once "npx semantic release"
+after_success:
+  - npx semantic-release
