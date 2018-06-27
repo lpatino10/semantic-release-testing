@@ -1,7 +1,13 @@
 {
   "branch": "master",
   "verifyConditions": [],
-  "debug": true,
   "prepare": [],
-  "publish": ["@semantic-release/github"]
+  "publish": [
+    {
+      "path": "@semantic-release/github",
+      "assets": [
+        {"path": "README.md", "label": "JAR"}
+      ]
+    }
+  ]
 }
