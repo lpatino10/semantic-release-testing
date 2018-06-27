@@ -3,10 +3,12 @@
   "verifyConditions": [],
   "prepare": [],
   "publish": [
+    "@semantic-release/github",
     {
-      "path": "@semantic-release/github",
+      "path": "@semantic-release/exec",
+      "cmd": "./version-bump.sh ${lastRelease.version} ${nextRelease.version}",
       "assets": [
-        {"path": "test_jars/java-sdk-*-jar-with-dependencies.txt", "label": "Release JAR"}
+        {"path": "java-sdk/build/libs/java-sdk-*-jar-with-dependencies.txt", "label": "Release JAR"}
       ]
     }
   ]

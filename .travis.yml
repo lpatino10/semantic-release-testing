@@ -1,6 +1,13 @@
 language: java
 
+before_install:
+  - pip install bumpversion
+
 script: echo "yoooo"
 
-after_success:
-  - npx semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - nvm install lts/*
+    - npx travis-deploy-once "npx semantic release"
