@@ -3,9 +3,16 @@ language: java
 script: echo "yoooo"
 
 before_install:
-  - sudo pip install bumpverison
+  - sudo apt-get update
+  - sudo apt-get install python3
+
+install:
+  - pip3 install bumpversion
+  - npm install @semantic-release/exec
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: deploy.sh
+  script:
+    - nvm install lts/*
+    - npx travis-deploy-once "npx semantic-release"
