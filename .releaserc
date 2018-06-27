@@ -6,7 +6,7 @@
     "@semantic-release/github",
     {
       "path": "@semantic-release/exec",
-      "cmd": "bumpversion --current-version ${lastRelease.version} --new-verison ${nextRelease.version} patch",
+      "cmd": "bumpversion --current-version ${lastRelease.version} --new-version ${nextRelease.version} patch",
       "assets": [
         {"path": "java-sdk/build/libs/java-sdk-*-jar-with-dependencies.txt", "label": "Release JAR"}
       ]
