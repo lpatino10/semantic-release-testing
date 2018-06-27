@@ -6,7 +6,7 @@
     {
       "path": "@semantic-release/github",
       "assets": [
-        {"path": "README.md", "label": "${TRAVIS_BRANCH}_test"}
+        {"path": "test_jars/java-sdk-*-jar-with-dependencies.txt", "label": "Release JAR"}
       ]
     }
   ]
