@@ -1,9 +1,6 @@
 language: java
 sudo: required
 
-before_install:
-  - pip install bumpversion
-
 script: echo "yoooo"
 
 deploy:
