@@ -5,6 +5,8 @@ public class MainClass {
 
   private static void print(String str) {
     System.out.println(str);
+    System.out.println(str);
+    System.out.println(str);
   }
 }
 
