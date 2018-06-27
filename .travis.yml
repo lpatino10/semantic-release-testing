@@ -4,10 +4,10 @@ script: echo "yoooo"
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install python3
+  - sudo apt-get install python
 
 install:
-  - pip3 install bumpversion
+  - pip install bumpversion
   - npm install @semantic-release/exec
 
 deploy:
